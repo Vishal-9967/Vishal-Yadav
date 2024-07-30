@@ -10,17 +10,26 @@
   }
 
   img {
-    width: 20px;
+    width: 100vw;
+    height: 100px;
+    object-fit: contain;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 200px;
+    padding: 0 1rem;
   }
 }
 
 .skillList {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-self: center;
   flex-wrap: wrap;
-  row-gap: 40px;
-  max-width: 26ch;
+  gap: 20px;
 }
 
 hr {

@@ -2,6 +2,7 @@ import styles from "./ProjectsStyles.module.css";
 import vibe from "../../assets/VibeMusic.png";
 import scriptify from "../../assets/scriptify.png";
 import crop from "../../assets/crop.png";
+import portfolio from "../../assets/portfolio.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
@@ -26,6 +27,12 @@ function Projects() {
           link="https://github.com/Vishal-9967/smart-farming"
           h3="Smart Farming"
           p="Simplifying Precision Farming with User-Friendly Solutions"
+        />
+         <ProjectCard
+          src={portfolio}
+          link="https://github.com/Vishal-9967/smart-farming"
+          h3="Vishal Portfolio"
+          p="Building and Learning"
         />
       </div>
     </section>

@@ -5,10 +5,13 @@
   align-items: center;
 
   img {
-    max-width: 400px;
+    max-width: 800px;
+    height: 500px;
+   object-fit: fill;
+    margin: 10px;
     align-self: center;
     background-color: var(--project-card-bg);
-    border-radius: 10px;
+    border-radius: 20px;
   }
 
   a {
