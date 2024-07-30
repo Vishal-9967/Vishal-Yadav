@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
+import App from "../src/App.jsx";
 import "./index.css";
-import { ThemeProvider } from "./common/ThemeContext.jsx";
+import { ThemeProvider } from "../src/common/ThemeContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -11,3 +11,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </ThemeProvider>
   </React.StrictMode>
 );
+
+
+// npm run dev
