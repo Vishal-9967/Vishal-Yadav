@@ -2,23 +2,35 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 
   img {
-    max-width: 250px;
+    max-width: 400px;
     align-self: center;
     background-color: var(--project-card-bg);
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
   a {
-    width: fit-content;
+    width: 100%;
     text-decoration: none;
     color: #222;
     transition: transform 200ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   a:hover {
     transform: scale(1.05);
+  }
+
+  p {
+    max-width: 400px;
+    margin: 0 auto;
+    word-wrap: break-word;
+    padding: 0 10px; /* Optional: Adds some padding for better text appearance */
+  font-family: 'Franklin Gothic Medium',sans-serif;
   }
 }
 
@@ -31,7 +43,7 @@
 
 @media (width >= 800px) {
   .projectsContainer {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 0 30px;

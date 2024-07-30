@@ -1,8 +1,7 @@
 import styles from "./ProjectsStyles.module.css";
 import vibe from "../../assets/VibeMusic.png";
 import scriptify from "../../assets/scriptify.png";
-import hipsster from "../../assets/hipsster.png";
-import fitLift from "../../assets/fitlift.png";
+import crop from "../../assets/crop.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
@@ -23,16 +22,10 @@ function Projects() {
           p="Effortless meeting transcriptions and actionable insights"
         />
         <ProjectCard
-          src={hipsster}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Hipsster"
-          p="Glasses Shop"
-        />
-        <ProjectCard
-          src={fitLift}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="FitLift"
-          p="Fitness App"
+          src={crop}
+          link="https://github.com/Vishal-9967/smart-farming"
+          h3="Smart Farming"
+          p="Simplifying Precision Farming with User-Friendly Solutions"
         />
       </div>
     </section>
