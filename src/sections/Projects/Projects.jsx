@@ -14,13 +14,13 @@ function Projects() {
           src={vibe}
           link="https://music-8a59e.web.app/"
           h3="Vibe Music"
-          p="Streaming App"
+          p="Music Streaming App"
         />
         <ProjectCard
           src={scriptify}
           link="https://github.com/Vishal-9967/Scriptify"
           h3="Scriptify"
-          p="Hamburger Restaurant"
+          p="Effortless meeting transcriptions and actionable insights"
         />
         <ProjectCard
           src={hipsster}

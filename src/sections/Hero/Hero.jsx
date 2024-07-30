@@ -1,5 +1,5 @@
 import styles from "./HeroStyles.module.css";
-import heroImg from "../../assets/1.png";
+import heroImg from "../../assets/heroimg.png";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
 // import twitterLight from "../../assets/twitter-light.svg";
@@ -42,9 +42,6 @@ function Hero() {
         </h1>
         <h2>Student|Full-stack Developer</h2>
         <span>
-          {/* <a href="https://twitter.com/" target="_blank">
-            <img src={twitterIcon} alt="Twitter icon" />
-          </a> */}
           <a href="https://github.com/Vishal-9967" target="_blank">
             <img src={githubIcon} alt="Github icon" />
           </a>
