@@ -7,7 +7,7 @@
   img {
     max-width: 800px;
     height: 500px;
-   object-fit: fill;
+    object-fit: fill;
     margin: 10px;
     align-self: center;
     background-color: var(--project-card-bg);
@@ -33,7 +33,7 @@
     margin: 0 auto;
     word-wrap: break-word;
     padding: 0 10px; /* Optional: Adds some padding for better text appearance */
-  font-family: 'Franklin Gothic Medium',sans-serif;
+    font-family: "Franklin Gothic Medium", sans-serif;
   }
 }
 
@@ -50,5 +50,77 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 0 30px;
+  }
+}
+
+/* Media query for tablets (portrait and landscape) */
+@media (min-width: 600px) and (max-width: 799px) {
+  .container {
+    text-align: center;
+    align-items: center;
+  }
+
+  .projectsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  img {
+    max-width: 300px;
+    height: auto;
+  }
+
+  p {
+    max-width: 300px;
+    padding: 0 5px;
+  }
+}
+
+/* Media query for small tablets and larger phones */
+@media (min-width: 400px) and (max-width: 599px) {
+  .container {
+    text-align: center;
+    align-items: center;
+  }
+
+  .projectsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  img {
+    max-width: 250px;
+    height: auto;
+  }
+
+  p {
+    max-width: 250px;
+    padding: 0 5px;
+  }
+}
+
+/* Media query for phones */
+@media (max-width: 399px) {
+  .container {
+    text-align: center;
+    align-items: center;
+  }
+
+  .projectsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  p {
+    max-width: 200px;
+    padding: 0 5px;
   }
 }

@@ -54,3 +54,68 @@ hr {
     width: 200px;
   }
 }
+
+/* Media query for tablets (portrait and landscape) */
+@media (min-width: 600px) and (max-width: 799px) {
+  .container {
+    text-align: center;
+  }
+
+  .skillList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  img {
+    width: 80px;
+    height: auto;
+  }
+
+  hr {
+    width: 150px;
+  }
+}
+
+/* Media query for small tablets and larger phones */
+@media (min-width: 400px) and (max-width: 599px) {
+  .container {
+    text-align: center;
+  }
+
+  .skillList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  img {
+    width: 60px;
+    height: auto;
+  }
+
+  hr {
+    width: 120px;
+  }
+}
+
+/* Media query for phones */
+@media (max-width: 399px) {
+  .container {
+    text-align: center;
+  }
+
+  .skillList {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  img {
+    width: 50px;
+    height: auto;
+  }
+
+  hr {
+    width: 100px;
+  }
+}
