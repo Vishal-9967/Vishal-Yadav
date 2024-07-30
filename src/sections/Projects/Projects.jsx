@@ -28,11 +28,11 @@ function Projects() {
           h3="Smart Farming"
           p="Simplifying Precision Farming with User-Friendly Solutions"
         />
-         <ProjectCard
+        <ProjectCard
           src={portfolio}
-          link="https://github.com/Vishal-9967/smart-farming"
+          link="https://github.com/Vishal-9967/Vishal-Yadav"
           h3="Vishal Portfolio"
-          p="Building and Learning"
+          p="Turning Concepts into Code"
         />
       </div>
     </section>
