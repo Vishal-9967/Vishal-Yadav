@@ -9,6 +9,9 @@
 
   .hero {
     max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
   }
 
   span {
@@ -77,28 +80,29 @@
   gap: 20px;
 }
 
-@media (width >= 1400px) {
+@media (min-width: 1400px) {
   .container {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
-    .hero {
-      max-width: 300px;
-      width: 300px;
-    }
+  }
+
+  .hero {
+    max-width: 300px;
+    width: 300px;
   }
 }
 
-@media (width >= 800px) {
+@media (min-width: 800px) {
   .container {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
+  }
 
-    .hero {
-      max-width: 400px;
-      width: 400px;
-    }
+  .hero {
+    max-width: 400px;
+    width: 400px;
   }
 }
 
@@ -108,11 +112,11 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
+  }
 
-    .hero {
-      max-width: 150px;
-      width: 150px;
-    }
+  .hero {
+    max-width: 200px;
+    width: 200px;
   }
 }
 
@@ -122,11 +126,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
 
-    .hero {
-      max-width: 120px;
-      width: 120px;
-    }
+  .hero {
+    max-width: 300px;
+    width: 100%;
+    height: auto; /* Ensure it scales properly */
   }
 }
 
@@ -136,10 +141,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
 
-    .hero {
-      max-width: 100px;
-      width: 100px;
-    }
+  .hero {
+    max-width: 200px;
+    width: 100%;
+    height: auto; /* Ensure it scales properly */
   }
 }
