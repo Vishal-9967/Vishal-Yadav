@@ -1,13 +1,13 @@
-import styles from './FooterStyles.module.css';
+import "./FooterStyles.module.css";
 
 function Footer() {
   return (
-    <section id="footer" className={styles.container}>
-      <p>
+    <footer className="footer">
+      <p className="footer-text">
         &copy; 2024 Vishal Yadav. <br />
         All rights reserved.
       </p>
-    </section>
+    </footer>
   );
 }
 

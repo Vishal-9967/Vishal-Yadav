@@ -3,124 +3,24 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-
-  img {
-    max-width: 800px;
-    height: 500px;
-    object-fit: fill;
-    margin: 10px;
-    align-self: center;
-    background-color: var(--project-card-bg);
-    border-radius: 20px;
-  }
-
-  a {
-    width: 100%;
-    text-decoration: none;
-    color: #222;
-    transition: transform 200ms ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  a:hover {
-    transform: scale(1.05);
-  }
-
-  p {
-    max-width: 400px;
-    margin: 0 auto;
-    word-wrap: break-word;
-    padding: 0 10px; /* Optional: Adds some padding for better text appearance */
-    font-family: "Franklin Gothic Medium", sans-serif;
-  }
+  padding: 20px;
 }
 
 .projectsContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 30px;
+  width: 100%;
 }
 
-@media (width >= 800px) {
+@media (min-width: 600px) {
   .projectsContainer {
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0 30px;
-  }
-}
-
-/* Media query for tablets (portrait and landscape) */
-@media (min-width: 600px) and (max-width: 799px) {
-  .container {
-    text-align: center;
-    align-items: center;
-  }
-
-  .projectsContainer {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  img {
-    max-width: 300px;
-    height: 300;
-  }
-
-  p {
-    max-width: 300px;
-    padding: 0 5px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-/* Media query for small tablets and larger phones */
-@media (min-width: 400px) and (max-width: 599px) {
-  .container {
-    text-align: center;
-    align-items: center;
-  }
-
+@media (min-width: 1024px) {
   .projectsContainer {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  img {
-    max-width: 250px;
-    height: 250;
-  }
-
-  p {
-    max-width: 250px;
-    padding: 0 5px;
-  }
-}
-
-/* Media query for phones */
-@media (max-width: 399px) {
-  .container {
-    text-align: center;
-    align-items: center;
-  }
-
-  .projectsContainer {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  img {
-    max-width: 200px;
-    height: 200;
-  }
-
-  p {
-    max-width: 200px;
-    padding: 0 5px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
